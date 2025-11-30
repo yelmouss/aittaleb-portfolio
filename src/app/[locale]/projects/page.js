@@ -9,17 +9,18 @@ import {useTranslations} from "next-intl";
 const ProjectsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
   const t = useTranslations("projects");
+  const tCategories = useTranslations("projects.categories");
 
   const handleCategoryChange = (event, newValue) => {
     setSelectedCategory(newValue);
   };
 
+  const activeCategory = categories[selectedCategory];
+
   const filteredProjects =
-    selectedCategory === 0
+    activeCategory === "all"
       ? projects
-      : projects.filter(
-          (project) => project.category === categories[selectedCategory]
-        );
+      : projects.filter((project) => project.category === activeCategory);
 
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
@@ -52,8 +53,8 @@ const ProjectsPage = () => {
           textColor="primary"
           indicatorColor="primary"
         >
-          {categories.map((category, index) => (
-            <Tab key={category} label={category} />
+          {categories.map((category) => (
+            <Tab key={category} label={tCategories(category)} />
           ))}
         </Tabs>
       </Box>

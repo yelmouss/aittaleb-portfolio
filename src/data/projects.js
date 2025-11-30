@@ -45,4 +45,4 @@ export const projects = [
   },
 ];
 
-export const categories = ["Tous", "Fintech", "Product Design", "Design System", "Branding"];
+export const categories = ["all", "Fintech", "Product Design", "Design System", "Branding"];

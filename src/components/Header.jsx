@@ -17,6 +17,7 @@ import {
 import {Link, usePathname} from "@/i18n/navigation";
 import React from "react";
 import {useTranslations} from "next-intl";
+import LocaleSwitcher from "@/components/LocaleSwitcher";
 
 const navItems = [
   { labelKey: "home", href: "/" },
@@ -105,6 +106,9 @@ const Header = () => {
             {tCommon(`nav.${item.labelKey}`)}
           </Button>
         ))}
+        <Box sx={{ pt: 2 }}>
+          <LocaleSwitcher />
+        </Box>
       </Stack>
     </Box>
   );
@@ -164,6 +168,7 @@ const Header = () => {
             >
               {tCommon("cta.behance")}
             </Button>
+            <LocaleSwitcher />
           </Stack>
 
           <IconButton
