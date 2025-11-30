@@ -90,7 +90,7 @@ const computeSiteUrls = (siteUrl, locale) => {
     return {
       base,
       localized: localisedUrl,
-      logo: `${base}/zakarialogo.svg`,
+      logo: `https://aittaleb.vercel.app/zakarialogo.svg`,
     };
   }
 
@@ -98,7 +98,7 @@ const computeSiteUrls = (siteUrl, locale) => {
   return {
     base,
     localized: `${base}/${localeSlug}`,
-    logo: `${base}/zakarialogo.svg`,
+    logo: `https://aittaleb.vercel.app/zakarialogo.svg`,
   };
 };
 
