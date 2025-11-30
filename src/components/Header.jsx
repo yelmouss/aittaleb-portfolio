@@ -134,27 +134,17 @@ const Header = () => {
                 display: "inline-flex",
                 alignItems: "center",
                 justifyContent: "center",
-                width: 48,
+                width: 120,
                 height: 48,
-                borderRadius: 2,
-                background: (theme) =>
-                  `linear-gradient(135deg, ${theme.palette.primary.main} 0%, ${theme.palette.secondary.main} 100%)`,
-                color: "white",
-                fontWeight: 700,
-                letterSpacing: 1,
-                fontSize: 18,
                 textDecoration: "none",
               }}
             >
-              {tCommon("brand.initials")}
-            </Box>
-            <Box>
-              <Typography variant="h6" fontWeight={700} color="text.primary">
-                {tCommon("brand.fullName")}
-              </Typography>
-              <Typography variant="body2" color="text.secondary">
-                {tCommon("brand.tagline")}
-              </Typography>
+              <Box
+                component="img"
+                src="/zakarialogo.svg"
+                alt={tCommon("brand.fullName")}
+                sx={{ height: "100%", width: "auto" }}
+              />
             </Box>
           </Stack>
 

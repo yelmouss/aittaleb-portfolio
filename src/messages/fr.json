@@ -36,7 +36,7 @@
       "portfolioDescription": "Explorez les études de cas détaillées, prototypes interactifs et systèmes de design livrés pour des clients internationaux.",
       "portfolioLink": "behance.net/zakariaaittaleb",
       "rights": "© {year} Zakaria Ait Taleb. Tous droits réservés.",
-      "availability": "Disponible pour collaborations · hello@zakaria.design"
+      "availability": "Disponible pour collaborations · zakaria.ait36@gmail.com"
     },
     "projectCard": {
       "technologies": "Technologies",
@@ -47,7 +47,13 @@
   "home": {
     "chip": "Zakaria Ait Taleb · UI/UX Designer indépendant",
     "title": "Concevoir des interfaces premium pour les produits fintech et SaaS.",
-    "description": "Disponible pour des missions internationales avec Proxenus. Je transforme la stratégie produit en expériences digitales mesurables et élégantes : design systems, onboarding performants et dashboards intelligents.",
+    "description": "Disponible pour des missions internationales avec Proxenus. Je transforme la stratégie produit en expériences digitales mesurables et élégantes : design systems, onboarding performants, dashboards intelligents et design ops.",
+    "heroPoints": [
+      "Je co-construis la vision design et produit avec vos CPO, PM et founders pour aligner roadmap, métriques et expérience.",
+      "Je livre des interfaces mesurables : tableaux de bord, parcours d'onboarding et design systems prêts pour vos équipes.",
+      "Je travaille en immersion avec vos squads pour orchestrer tests, handoffs et itérations rapides."
+    ],
+    "signature": "Chaque mission est menée en binôme avec vos équipes : ateliers ciblés, rituels agiles et support continu jusqu'au déploiement.",
     "stats": [
       {
         "value": "+18",
@@ -56,13 +62,40 @@
       {
         "value": "6 ans",
         "description": "d'expérience en design produit et design systems."
+      },
+      {
+        "value": "12 pays",
+        "description": "Clients accompagnés entre l'Europe, l'Afrique et le Moyen-Orient."
       }
     ],
+    "photoSpotlight": {
+      "badge": "Portrait",
+      "caption": "Zakaria Ait Taleb",
+      "description": "Portrait capturé à Casablanca, symbole de l'approche humaine et stratégique portée sur chaque mission."
+    },
     "spotlight": {
       "title": "Casablanca → Worldwide",
       "description": "Basé à Casablanca, j'accompagne les équipes produit de Paris, Londres et Dubai sur des problématiques de croissance, d'acquisition et de design system.",
       "expertisesTitle": "Expertises clés",
       "expertisesList": "Design Systems · Product Strategy · Motion UI · User Research"
+    },
+    "highlights": {
+      "title": "Focus 2025",
+      "subtitle": "Les projets et axes de collaboration qui animent mon année.",
+      "items": [
+        {
+          "title": "Scale-ups fintech série B",
+          "description": "Accompagnement produit récurrent pour accélérer l'activation, la rétention et la conversion des comptes premium."
+        },
+        {
+          "title": "Design systems multi-marques",
+          "description": "Refonte des bibliothèques Figma et des tokens cross-platform pour garantir cohérence et vitesse de livraison."
+        },
+        {
+          "title": "Expériences data-rich",
+          "description": "Conception de dashboards et workflows analytiques pour les équipes revenue, ops et customer success."
+        }
+      ]
     },
     "services": {
       "title": "Services sur-mesure",
@@ -102,6 +135,27 @@
           "description": "Design tokens, specs détaillées, vidéos de motion et support auprès des équipes produit et dev."
         }
       ]
+    },
+    "principles": {
+      "title": "Principes de collaboration",
+      "intro": "Un cadre clair dès le jour 1 pour sécuriser la qualité, la vitesse et la transparence.",
+      "items": [
+        {
+          "title": "Transparence radicale",
+          "description": "Accès complet aux roadmaps, fichiers Figma, documents Notion et KPI pour que vos équipes gardent la main."
+        },
+        {
+          "title": "Rituels productifs",
+          "description": "Point hebdo de 30 minutes, récap vidéo Loom et tableaux de suivi pour prendre des décisions rapides."
+        },
+        {
+          "title": "Livrables actionnables",
+          "description": "Chaque section livrée inclut prototypes, motions guidés, tokens prêts et recommandations prioritaires."
+        }
+      ],
+      "ctaTitle": "Envie d'un plan d'action ?",
+      "ctaDescription": "Partagez votre contexte produit et recevez une proposition détaillée en 48h avec planning, scope et indicateurs.",
+      "ctaButton": "Planifier un échange"
     }
   },
   "projects": {
@@ -186,7 +240,7 @@
     "title": "Démarrons une collaboration.",
     "intro": "Disponible pour des projets UI/UX, design systems et accompagnement produit. Décrivez vos objectifs et planifions un échange pour cadrer la mission.",
     "detailsTitle": "Coordonnées",
-    "email": "Email : hello@zakaria.design",
+    "email": "Email : zakaria.ait36@gmail.com",
     "behance": "Behance : behance.net/zakariaaittaleb",
     "location": "Casablanca, Morocco",
     "form": {
@@ -195,7 +249,10 @@
       "company": "Entreprise",
       "message": "Parlez-moi de votre projet",
       "submit": "Envoyer la demande",
-      "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté pour discuter de votre projet."
+      "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté pour discuter de votre projet.",
+      "success": "Merci ! Votre message a bien été envoyé. Je reviens vers vous sous 24h.",
+      "error": "Un problème est survenu lors de l'envoi. Merci de réessayer ou d'écrire à zakaria.ait36@gmail.com.",
+      "validationError": "Merci de renseigner votre nom, votre email et un message."
     }
   }
 }

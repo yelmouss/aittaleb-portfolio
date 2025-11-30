@@ -3,16 +3,80 @@
 import {
   Box,
   Button,
+  CircularProgress,
   Container,
   Grid,
+  Snackbar,
   Stack,
   TextField,
   Typography,
 } from "@mui/material";
-import {useTranslations} from "next-intl";
+import MuiAlert from "@mui/material/Alert";
+import {useLocale, useTranslations} from "next-intl";
+import {useCallback, useMemo, useState} from "react";
+
+const Alert = (props) => <MuiAlert elevation={6} variant="filled" {...props} />;
 
 export default function ContactPage() {
   const t = useTranslations("contact");
+  const locale = useLocale();
+
+  const [values, setValues] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [submitting, setSubmitting] = useState(false);
+  const [snackbar, setSnackbar] = useState({ open: false, message: "", severity: "success" });
+
+  const resetForm = useCallback(() => {
+    setValues({ name: "", email: "", company: "", message: "" });
+  }, []);
+
+  const handleChange = useCallback((event) => {
+    const { name, value } = event.target;
+    setValues((prev) => ({ ...prev, [name]: value }));
+  }, []);
+
+  const closeSnackbar = useCallback(() => {
+    setSnackbar((prev) => ({ ...prev, open: false }));
+  }, []);
+
+  const isPrimaryFieldsMissing = useMemo(() => {
+    return !values.name.trim() || !values.email.trim() || !values.message.trim();
+  }, [values]);
+
+  const handleSubmit = useCallback(
+    async (event) => {
+      event.preventDefault();
+      if (isPrimaryFieldsMissing) {
+        setSnackbar({ open: true, message: t("form.validationError"), severity: "warning" });
+        return;
+      }
+
+      setSubmitting(true);
+      try {
+        const response = await fetch("/api/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ ...values, locale }),
+        });
+
+        if (!response.ok) {
+          throw new Error("Request failed");
+        }
+
+        setSnackbar({ open: true, message: t("form.success"), severity: "success" });
+        resetForm();
+      } catch (error) {
+        setSnackbar({ open: true, message: t("form.error"), severity: "error" });
+      } finally {
+        setSubmitting(false);
+      }
+    },
+    [isPrimaryFieldsMissing, locale, resetForm, t, values]
+  );
 
   return (
     <Box component="section" sx={{ backgroundColor: "background.default" }}>
@@ -50,6 +114,7 @@ export default function ContactPage() {
               component="form"
               noValidate
               autoComplete="off"
+              onSubmit={handleSubmit}
               sx={{
                 borderRadius: 4,
                 p: { xs: 3, md: 5 },
@@ -61,9 +126,33 @@ export default function ContactPage() {
                 gap: 3,
               }}
             >
-              <TextField label={t("form.name")} name="name" variant="outlined" fullWidth required />
-              <TextField label={t("form.email")} name="email" variant="outlined" type="email" fullWidth required />
-              <TextField label={t("form.company")} name="company" variant="outlined" fullWidth />
+              <TextField
+                label={t("form.name")}
+                name="name"
+                variant="outlined"
+                fullWidth
+                required
+                value={values.name}
+                onChange={handleChange}
+              />
+              <TextField
+                label={t("form.email")}
+                name="email"
+                variant="outlined"
+                type="email"
+                fullWidth
+                required
+                value={values.email}
+                onChange={handleChange}
+              />
+              <TextField
+                label={t("form.company")}
+                name="company"
+                variant="outlined"
+                fullWidth
+                value={values.company}
+                onChange={handleChange}
+              />
               <TextField
                 label={t("form.message")}
                 name="message"
@@ -72,9 +161,27 @@ export default function ContactPage() {
                 rows={4}
                 fullWidth
                 required
+                value={values.message}
+                onChange={handleChange}
               />
-              <Button type="submit" variant="contained" size="large">
-                {t("form.submit")}
+              <Button
+                type="submit"
+                variant="contained"
+                size="large"
+                disabled={submitting}
+                sx={{
+                  alignSelf: { xs: "stretch", sm: "flex-start" },
+                  minWidth: 180,
+                }}
+              >
+                {submitting ? (
+                  <Stack direction="row" spacing={1.5} alignItems="center">
+                    <CircularProgress size={18} sx={{ color: "white" }} />
+                    <span>{t("form.submit")}</span>
+                  </Stack>
+                ) : (
+                  t("form.submit")
+                )}
               </Button>
               <Typography variant="caption" color="text.secondary">
                 {t("form.disclaimer")}
@@ -83,6 +190,16 @@ export default function ContactPage() {
           </Grid>
         </Grid>
       </Container>
+      <Snackbar
+        open={snackbar.open}
+        autoHideDuration={6000}
+        onClose={closeSnackbar}
+        anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+      >
+        <Alert onClose={closeSnackbar} severity={snackbar.severity} sx={{ width: "100%" }}>
+          {snackbar.message}
+        </Alert>
+      </Snackbar>
     </Box>
   );
 }

@@ -1,48 +1,49 @@
 export const projects = [
   {
     id: "binance-growth-dashboard",
-    title: "Binance Growth Dashboard",
-    description:
-      "Refonte UI complète du tableau de bord Binance pour les traders pros : hiérarchie visuelle claire, cartes de performance modulaires et mode sombre accessible.",
+    title: "BIM STORE MAROC",
+    description: "Refonte UI complète de Site BIM STORE MAROC",
     technologies: ["Figma", "Design System", "Prototypage", "User Testing"],
-    image: "/projects/binance-growth-dashboard.jpg",
+    image: "/projects/bimstore.webp",
     githubUrl: null,
-    liveUrl: "https://www.behance.net/zakariaaittaleb",
-    category: "Fintech",
+    liveUrl:
+      "https://www.behance.net/gallery/161681343/BIM-Store-Maroc-(WebSite-Remake)",
+    category: "UI UX",
   },
   {
     id: "pro-wallet-mobile",
-    title: "Pro Wallet Mobile",
-    description:
-      "Expérience mobile premium pour un portefeuille crypto : flux KYC personnalisé, suivi des actifs en temps réel et micro-interactions fluides.",
-    technologies: ["Figma", "Motion", "Design Tokens", "User Flows"],
-    image: "/projects/pro-wallet-mobile.jpg",
+    title: "Portfolio 2025",
+    description: "Un portefeuille pour l'année 2023/2024",
+    technologies: [
+      "Figma",
+      "Motion",
+      "Design Tokens",
+      "User Flows",
+      "Digital Print",
+    ],
+    image: "/projects/porfolio2025.webp",
     githubUrl: null,
-    liveUrl: "https://www.behance.net/zakariaaittaleb",
-    category: "Product Design",
+    liveUrl:
+      "https://www.behance.net/gallery/196058493/Portfolio-Graphic-Designer-2024",
+    category: "Branding",
   },
   {
     id: "design-system-aurum",
-    title: "Aurum Design System",
-    description:
-      "Système de design modulaire pour une plateforme crypto B2B : 140 composants, guidelines UX et automatisations Figma dédiées aux équipes produit.",
-    technologies: ["Figma", "Design Ops", "Component Libraries", "Documentation"],
-    image: "/projects/aurum-design-system.jpg",
+    title: "Website for cars",
+    description: "Car rent reservation website",
+    technologies: ["Figma", "Webdesign", "Documentation"],
+    image: "/projects/carentzakaria.webp",
     githubUrl: null,
-    liveUrl: "https://www.behance.net/zakariaaittaleb",
-    category: "Design System",
-  },
-  {
-    id: "proxenus-brand-identity",
-    title: "Proxenus Brand Identity",
-    description:
-      "Identité visuelle et guidelines UI pour Proxenus : naming des styles, grille responsive, kit UI marketing et motion guidelines pour le lancement.",
-    technologies: ["Brand Design", "UI Kit", "Motion", "Accessibility"],
-    image: "/projects/proxenus-brand-identity.jpg",
-    githubUrl: null,
-    liveUrl: "https://www.behance.net/zakariaaittaleb",
-    category: "Branding",
+    liveUrl:
+      "https://www.behance.net/gallery/168083125/Website-CarWash-UI-UX-Webiste-RDV/modules/947986871#",
+    category: "UI UX",
   },
 ];
 
-export const categories = ["all", "Fintech", "Product Design", "Design System", "Branding"];
+export const categories = [
+  "all",
+  "UI UX",
+  "Apps",
+  "Graphic Design",
+  "Branding",
+];

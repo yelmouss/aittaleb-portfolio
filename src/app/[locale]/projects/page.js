@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState} from "react";
+import React, {useMemo, useState} from "react";
 import {Container, Typography, Grid, Box, Tabs, Tab} from "@mui/material";
 import ProjectCard from "@/components/ProjectCard";
 import {projects, categories} from "@/data/projects";
@@ -9,7 +9,16 @@ import {useTranslations} from "next-intl";
 const ProjectsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
   const t = useTranslations("projects");
-  const tCategories = useTranslations("projects.categories");
+
+  const categoryLabels = useMemo(
+    () =>
+      categories.map((category) =>
+        category.toLowerCase() === "all"
+          ? "All"
+          : category
+      ),
+    []
+  );
 
   const handleCategoryChange = (event, newValue) => {
     setSelectedCategory(newValue);
@@ -53,8 +62,8 @@ const ProjectsPage = () => {
           textColor="primary"
           indicatorColor="primary"
         >
-          {categories.map((category) => (
-            <Tab key={category} label={tCategories(category)} />
+          {categories.map((category, index) => (
+            <Tab key={category} label={categoryLabels[index]} />
           ))}
         </Tabs>
       </Box>
