@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useState } from 'react';
-import { Container, Typography, Grid, Box, Tabs, Tab } from '@mui/material';
-import ProjectCard from '@/components/ProjectCard';
-import { projects, categories } from '@/data/projects';
+import React, { useState } from "react";
+import { Container, Typography, Grid, Box, Tabs, Tab } from "@mui/material";
+import ProjectCard from "@/components/ProjectCard";
+import { projects, categories } from "@/data/projects";
 
 const ProjectsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState(0);
@@ -12,9 +12,12 @@ const ProjectsPage = () => {
     setSelectedCategory(newValue);
   };
 
-  const filteredProjects = selectedCategory === 0 
-    ? projects 
-    : projects.filter(project => project.category === categories[selectedCategory]);
+  const filteredProjects =
+    selectedCategory === 0
+      ? projects
+      : projects.filter(
+          (project) => project.category === categories[selectedCategory]
+        );
 
   return (
     <Container maxWidth="lg" sx={{ py: 8 }}>
@@ -32,10 +35,10 @@ const ProjectsPage = () => {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Mes Projets
+          Études de cas
         </Typography>
         <Typography variant="h6" color="text.secondary" paragraph>
-          Découvrez mes réalisations en blockchain, trading et développement web
+          Une sélection de projets UI/UX menés pour des acteurs fintech et tech en croissance
         </Typography>
       </Box>
 
@@ -54,8 +57,8 @@ const ProjectsPage = () => {
       </Box>
 
       <Grid container spacing={4}>
-        {filteredProjects.map((project, index) => (
-          <Grid item xs={12} sm={6} md={6} key={index}>
+        {filteredProjects.map((project) => (
+          <Grid item xs={12} sm={6} md={6} key={project.id}>
             <ProjectCard project={project} />
           </Grid>
         ))}
