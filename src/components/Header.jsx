@@ -14,20 +14,21 @@ import {
   Toolbar,
   Typography,
 } from "@mui/material";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+import {Link, usePathname} from "@/i18n/navigation";
 import React from "react";
+import {useTranslations} from "next-intl";
 
 const navItems = [
-  { label: "Accueil", href: "/" },
-  { label: "Projets", href: "/projects" },
-  { label: "À propos", href: "/about" },
-  { label: "Services", href: "/services" },
-  { label: "Contact", href: "/contact" },
+  { labelKey: "home", href: "/" },
+  { labelKey: "projects", href: "/projects" },
+  { labelKey: "about", href: "/about" },
+  { labelKey: "services", href: "/services" },
+  { labelKey: "contact", href: "/contact" },
 ];
 
 const Header = () => {
   const pathname = usePathname();
+  const tCommon = useTranslations("common");
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
   const handleDrawerToggle = () => {
@@ -72,7 +73,7 @@ const Header = () => {
           },
         }}
       >
-        {item.label}
+        {tCommon(`nav.${item.labelKey}`)}
       </Button>
     );
   };
@@ -81,9 +82,9 @@ const Header = () => {
     <Box sx={{ p: 3 }}>
       <Stack direction="row" justifyContent="space-between" alignItems="center" mb={2}>
         <Typography variant="h6" fontWeight={700} color="primary.main">
-          ZA.
+          {tCommon("brand.initials")}
         </Typography>
-        <IconButton onClick={handleDrawerToggle}>
+        <IconButton onClick={handleDrawerToggle} aria-label={tCommon("drawer.close")}>
           <CloseIcon />
         </IconButton>
       </Stack>
@@ -101,7 +102,7 @@ const Header = () => {
               fontWeight: 600,
             }}
           >
-            {item.label}
+            {tCommon(`nav.${item.labelKey}`)}
           </Button>
         ))}
       </Stack>
@@ -140,14 +141,14 @@ const Header = () => {
                 textDecoration: "none",
               }}
             >
-              ZA
+              {tCommon("brand.initials")}
             </Box>
             <Box>
               <Typography variant="h6" fontWeight={700} color="text.primary">
-                Zakaria Ait Taleb
+                {tCommon("brand.fullName")}
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                UI/UX Designer · Disponible en indépendant
+                {tCommon("brand.tagline")}
               </Typography>
             </Box>
           </Stack>
@@ -155,13 +156,13 @@ const Header = () => {
           <Stack direction="row" alignItems="center" spacing={3} sx={{ display: { xs: "none", md: "flex" } }}>
             {navItems.map((item) => renderNavButton(item))}
             <Button
-              component={Link}
+              component="a"
               href="https://www.behance.net/zakariaaittaleb"
               target="_blank"
               rel="noopener noreferrer"
               variant="contained"
             >
-              Portfolio Behance
+              {tCommon("cta.behance")}
             </Button>
           </Stack>
 
@@ -170,7 +171,7 @@ const Header = () => {
             color="inherit"
             onClick={handleDrawerToggle}
             sx={{ display: { xs: "flex", md: "none" } }}
-            aria-label="open navigation"
+            aria-label={tCommon("header.drawerTitle")}
           >
             <MenuIcon />
           </IconButton>

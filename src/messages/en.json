@@ -1,0 +1,201 @@
+{
+  "common": {
+    "brand": {
+      "initials": "ZA",
+      "fullName": "Zakaria Ait Taleb",
+      "tagline": "Freelance UI/UX Designer"
+    },
+    "nav": {
+      "home": "Home",
+      "projects": "Projects",
+      "about": "About",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "cta": {
+      "behance": "Behance Portfolio",
+      "viewCases": "View case studies",
+      "bookCall": "Book a call"
+    },
+    "header": {
+      "drawerTitle": "Menu"
+    },
+    "drawer": {
+      "close": "Close"
+    },
+    "locale": {
+      "fr": "French",
+      "en": "English"
+    },
+    "languageSwitcher": {
+      "aria": "Change language"
+    },
+    "footer": {
+      "navigation": "Navigation",
+      "portfolioTitle": "Behance Portfolio",
+      "portfolioDescription": "Browse detailed case studies, interactive prototypes and design systems delivered for global clients.",
+      "portfolioLink": "behance.net/zakariaaittaleb",
+      "rights": "© {year} Zakaria Ait Taleb. All rights reserved.",
+      "availability": "Open for collaborations · hello@zakaria.design"
+    },
+    "projectCard": {
+      "technologies": "Technologies",
+      "code": "Code",
+      "demo": "Live demo"
+    }
+  },
+  "home": {
+    "chip": "Zakaria Ait Taleb · Freelance UI/UX Designer",
+    "title": "Designing premium interfaces for fintech and SaaS products.",
+    "description": "Available for international engagements with Proxenus. I turn product strategy into measurable, elegant digital experiences: design systems, high-performing onboardings and smart dashboards.",
+    "stats": [
+      {
+        "value": "+18",
+        "description": "Products shipped for scale-ups & fintech brands."
+      },
+      {
+        "value": "6 yrs",
+        "description": "of experience in product design and design systems."
+      }
+    ],
+    "spotlight": {
+      "title": "Casablanca → Worldwide",
+      "description": "Based in Casablanca, partnering with product teams in Paris, London and Dubai on growth, acquisition and design system challenges.",
+      "expertisesTitle": "Core skills",
+      "expertisesList": "Design Systems · Product Strategy · Motion UI · User Research"
+    },
+    "services": {
+      "title": "Tailored services",
+      "subtitle": "Every engagement starts with a quick audit to deliver focused support: from product vision to design/dev handoff.",
+      "items": [
+        {
+          "chip": "End-to-end",
+          "title": "Full product design",
+          "description": "Discovery, high-fidelity wireframes, interactive prototypes and user testing for fintech and SaaS products."
+        },
+        {
+          "chip": "Ops & Scale",
+          "title": "Design systems",
+          "description": "Scalable design systems, Figma documentation and ready-to-ship design tokens for your product teams."
+        },
+        {
+          "chip": "Branding",
+          "title": "Brand UI & strategy",
+          "description": "Consistent visual identity, UI guidelines and marketing kits to strengthen your digital presence."
+        }
+      ]
+    },
+    "process": {
+      "title": "Three-step methodology",
+      "subtitle": "An iterative approach connecting product strategy, data and design craft to deliver high-performing interfaces.",
+      "steps": [
+        {
+          "title": "Alignment & insights",
+          "description": "Alignment workshops, KPI definition and journey analysis to frame each engagement."
+        },
+        {
+          "title": "Design & prototype",
+          "description": "Rapid wireframes, modular UI kit and interactive prototypes tested with your key segments."
+        },
+        {
+          "title": "Delivery & handoff",
+          "description": "Design tokens, detailed specs, motion walkthroughs and support for product & engineering teams."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Case studies",
+    "description": "A selection of UI/UX projects delivered for fast-growing fintech and tech companies",
+    "empty": "No project in this category yet",
+    "categories": {
+      "all": "All",
+      "Fintech": "Fintech",
+      "Product Design": "Product design",
+      "Design System": "Design system",
+      "Branding": "Branding"
+    }
+  },
+  "about": {
+    "sectionLabel": "About",
+    "title": "Product designer focused on impact and consistency.",
+    "intro": "I design digital experiences for scale-ups, fintechs and SaaS platforms. My approach blends product strategy, design craft and operational rigor to deliver elegant, effective interfaces.",
+    "body": "Based in Casablanca, I collaborate remotely with international teams across France, the UK and the Middle East. Design systems, user research and business performance guide every decision I make.",
+    "experienceTitle": "Background & collaborations",
+    "experience": [
+      {
+        "title": "Proxenus",
+        "subtitle": "Lead UI/UX Designer",
+        "period": "2022 - Present",
+        "description": "Leading product design for fintech and SaaS platforms: full redesigns, design systems and coordination with product teams."
+      },
+      {
+        "title": "Freelance",
+        "subtitle": "Senior Product Designer",
+        "period": "2019 - 2022",
+        "description": "Supporting European startups with onboarding design, user journey structuring and conversion improvements."
+      },
+      {
+        "title": "Workshops & Mentoring",
+        "subtitle": "Figma · UX Strategy",
+        "period": "Since 2020",
+        "description": "Running workshops on design ops, user research and successful design-to-dev handoffs."
+      }
+    ]
+  },
+  "servicesPage": {
+    "sectionLabel": "Services",
+    "title": "Offers tailored to your product maturity.",
+    "intro": "I partner with scale-ups, fintechs and B2B SaaS teams to deliver cohesive experiences. Each collaboration starts with a diagnosis to align business and UX goals.",
+    "deliverablesTitle": "Included deliverables",
+    "packages": [
+      {
+        "title": "Product strategy sprint",
+        "description": "Two weeks to align vision, key personas and priority journeys. Deliverables ready to kick off a product sprint.",
+        "deliverables": [
+          "UX audit + recommendations",
+          "Information architecture",
+          "Storyboard & key wireframes",
+          "Prioritized design roadmap"
+        ]
+      },
+      {
+        "title": "Turnkey design system",
+        "description": "Create or refresh a modular design system with tokens, components and guidelines for product and engineering teams.",
+        "deliverables": [
+          "Interface audit",
+          "Figma component library",
+          "Tokens + naming system",
+          "Documentation & handoff"
+        ]
+      },
+      {
+        "title": "Ongoing product partnership",
+        "description": "Monthly support to iterate, test and elevate your interfaces with a data-informed and craft-driven mindset.",
+        "deliverables": [
+          "Quarterly planning",
+          "Weekly deliveries",
+          "Regular user testing",
+          "Metrics tracking & optimization"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Let's start a collaboration.",
+    "intro": "Available for UI/UX projects, design systems and product support. Share your goals and let's schedule a call to scope the mission.",
+    "detailsTitle": "Contact details",
+    "email": "Email: hello@zakaria.design",
+    "behance": "Behance: behance.net/zakariaaittaleb",
+    "location": "Casablanca, Morocco",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "company": "Company",
+      "message": "Tell me about your project",
+      "submit": "Send request",
+      "disclaimer": "By submitting this form you agree to be contacted to discuss your project."
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "common": {
+    "brand": {
+      "initials": "ZA",
+      "fullName": "Zakaria Ait Taleb",
+      "tagline": "UI/UX Designer · Disponible en indépendant"
+    },
+    "nav": {
+      "home": "Accueil",
+      "projects": "Projets",
+      "about": "À propos",
+      "services": "Services",
+      "contact": "Contact"
+    },
+    "cta": {
+      "behance": "Portfolio Behance",
+      "viewCases": "Voir les études de cas",
+      "bookCall": "Programmer un appel"
+    },
+    "header": {
+      "drawerTitle": "Menu"
+    },
+    "drawer": {
+      "close": "Fermer"
+    },
+    "locale": {
+      "fr": "Français",
+      "en": "English"
+    },
+    "languageSwitcher": {
+      "aria": "Changer de langue"
+    },
+    "footer": {
+      "navigation": "Navigation",
+      "portfolioTitle": "Portfolio Behance",
+      "portfolioDescription": "Explorez les études de cas détaillées, prototypes interactifs et systèmes de design livrés pour des clients internationaux.",
+      "portfolioLink": "behance.net/zakariaaittaleb",
+      "rights": "© {year} Zakaria Ait Taleb. Tous droits réservés.",
+      "availability": "Disponible pour collaborations · hello@zakaria.design"
+    },
+    "projectCard": {
+      "technologies": "Technologies",
+      "code": "Code",
+      "demo": "Démo"
+    }
+  },
+  "home": {
+    "chip": "Zakaria Ait Taleb · UI/UX Designer indépendant",
+    "title": "Concevoir des interfaces premium pour les produits fintech et SaaS.",
+    "description": "Disponible pour des missions internationales avec Proxenus. Je transforme la stratégie produit en expériences digitales mesurables et élégantes : design systems, onboarding performants et dashboards intelligents.",
+    "stats": [
+      {
+        "value": "+18",
+        "description": "Produits livrés pour des scale-ups et fintech."
+      },
+      {
+        "value": "6 ans",
+        "description": "d'expérience en design produit et design systems."
+      }
+    ],
+    "spotlight": {
+      "title": "Casablanca → Worldwide",
+      "description": "Basé à Casablanca, j'accompagne les équipes produit de Paris, Londres et Dubai sur des problématiques de croissance, d'acquisition et de design system.",
+      "expertisesTitle": "Expertises clés",
+      "expertisesList": "Design Systems · Product Strategy · Motion UI · User Research"
+    },
+    "services": {
+      "title": "Services sur-mesure",
+      "subtitle": "Chaque mission démarre par un audit rapide pour livrer un accompagnement ciblé : de la vision produit à la livraison design/dev.",
+      "items": [
+        {
+          "chip": "End-to-end",
+          "title": "Product Design complet",
+          "description": "Discovery, wireframes haute fidélité, prototypes interactifs et tests utilisateurs pour des produits fintech et SaaS."
+        },
+        {
+          "chip": "Ops & Scale",
+          "title": "Design Systems",
+          "description": "Création de systèmes de design scalables, documentation Figma et design tokens prêts pour vos équipes produit."
+        },
+        {
+          "chip": "Branding",
+          "title": "Brand UI & Stratégie",
+          "description": "Identité visuelle cohérente, guidelines UI et kits marketing pour renforcer votre présence digitale."
+        }
+      ]
+    },
+    "process": {
+      "title": "Méthodologie en trois temps",
+      "subtitle": "Une approche itérative reliant stratégie produit, data et design craft pour livrer des interfaces performantes.",
+      "steps": [
+        {
+          "title": "Alignement & Insights",
+          "description": "Ateliers d'alignement, définition des KPI produit et analyse des parcours actuels pour cadrer chaque mission."
+        },
+        {
+          "title": "Conception & Prototype",
+          "description": "Wireframes rapides, UI kit modulaire et prototypes interactifs testés auprès de vos segments clés."
+        },
+        {
+          "title": "Livraison & Handoff",
+          "description": "Design tokens, specs détaillées, vidéos de motion et support auprès des équipes produit et dev."
+        }
+      ]
+    }
+  },
+  "projects": {
+    "title": "Études de cas",
+    "description": "Une sélection de projets UI/UX menés pour des acteurs fintech et tech en croissance",
+    "empty": "Aucun projet dans cette catégorie",
+    "categories": {
+      "all": "Tous",
+      "Fintech": "Fintech",
+      "Product Design": "Product Design",
+      "Design System": "Design System",
+      "Branding": "Branding"
+    }
+  },
+  "about": {
+    "sectionLabel": "À propos",
+    "title": "Designer produit focalisé sur l'impact et la cohérence.",
+    "intro": "Je conçois des expériences digitales pour des scale-ups, fintechs et produits SaaS. Mon approche combine stratégie produit, design craft et rigueur opérationnelle pour livrer des interfaces élégantes et efficaces.",
+    "body": "Basé à Casablanca, je collabore à distance avec des équipes internationales en France, UK et Moyen-Orient. Le design system, la recherche utilisateur et la performance business guident chacune de mes décisions.",
+    "experienceTitle": "Parcours & collaborations",
+    "experience": [
+      {
+        "title": "Proxenus",
+        "subtitle": "Lead UI/UX Designer",
+        "period": "2022 - Aujourd'hui",
+        "description": "Pilotage du design produit pour des fintechs et plateformes SaaS : refontes complètes, design systems et coordination avec les équipes produit."
+      },
+      {
+        "title": "Freelance",
+        "subtitle": "Senior Product Designer",
+        "period": "2019 - 2022",
+        "description": "Accompagnement de startups européennes sur la conception d'onboarding, la structuration des parcours utilisateurs et l'amélioration de la conversion."
+      },
+      {
+        "title": "Workshops & Mentorat",
+        "subtitle": "Figma · UX Strategy",
+        "period": "Depuis 2020",
+        "description": "Organisation d'ateliers autour du design ops, de la recherche utilisateur et des handoffs réussis entre design et développement."
+      }
+    ]
+  },
+  "servicesPage": {
+    "sectionLabel": "Services",
+    "title": "Des offres adaptées à chaque maturité produit.",
+    "intro": "Je travaille avec des scale-ups, fintechs et SaaS B2B pour délivrer des expériences cohérentes. Chaque collaboration démarre par un diagnostic pour cadrer les objectifs business et UX.",
+    "deliverablesTitle": "Livrables inclus",
+    "packages": [
+      {
+        "title": "Sprint stratégie produit",
+        "description": "2 semaines pour aligner vision, personas clés et parcours prioritaires. Livrables prêts pour lancer un sprint produit.",
+        "deliverables": [
+          "Audit UX + recommandations",
+          "Architecture de l'information",
+          "Storyboard & wireframes clés",
+          "Roadmap design priorisée"
+        ]
+      },
+      {
+        "title": "Design system clé en main",
+        "description": "Création ou refonte d'un design system modulaire avec tokens, composants et guidelines pour les équipes produit et tech.",
+        "deliverables": [
+          "Audit de vos interfaces",
+          "Bibliothèque de composants Figma",
+          "Tokens + naming system",
+          "Documentation & handoff"
+        ]
+      },
+      {
+        "title": "Accompagnement produit continu",
+        "description": "Support mensuel pour itérer, tester et enrichir vos interfaces avec une vision data driven et craft UI.",
+        "deliverables": [
+          "Planning trimestriel",
+          "Livraisons hebdomadaires",
+          "Tests utilisateurs réguliers",
+          "Suivi métriques & optimisation"
+        ]
+      }
+    ]
+  },
+  "contact": {
+    "sectionLabel": "Contact",
+    "title": "Démarrons une collaboration.",
+    "intro": "Disponible pour des projets UI/UX, design systems et accompagnement produit. Décrivez vos objectifs et planifions un échange pour cadrer la mission.",
+    "detailsTitle": "Coordonnées",
+    "email": "Email : hello@zakaria.design",
+    "behance": "Behance : behance.net/zakariaaittaleb",
+    "location": "Casablanca, Morocco",
+    "form": {
+      "name": "Nom et prénom",
+      "email": "Email",
+      "company": "Entreprise",
+      "message": "Parlez-moi de votre projet",
+      "submit": "Envoyer la demande",
+      "disclaimer": "En soumettant ce formulaire, vous acceptez d'être contacté pour discuter de votre projet."
+    }
+  }
+}

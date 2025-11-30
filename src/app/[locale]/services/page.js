@@ -15,62 +15,39 @@ import {
   Typography,
 } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
+import {useTranslations} from "next-intl";
 
-const servicePackages = [
-  {
-    title: "Sprint stratégie produit",
-    description:
-      "2 semaines pour aligner vision, personas clés et parcours prioritaires. Livrables prêts pour lancer un sprint produit.",
-    deliverables: [
-      "Audit UX + recommandations",
-      "Architecture de l'information",
-      "Storyboard & wireframes clés",
-      "Roadmap design priorisée",
-    ],
-  },
-  {
-    title: "Design system clé en main",
-    description:
-      "Création ou refonte d'un design system modulaire avec tokens, composants et guidelines pour les équipes produit et tech.",
-    deliverables: [
-      "Audit de vos interfaces",
-      "Bibliothèque de composants Figma",
-      "Tokens + naming system",
-      "Documentation & handoff",
-    ],
-  },
-  {
-    title: "Accompagnement produit continu",
-    description:
-      "Support mensuel pour itérer, tester et enrichir vos interfaces avec une vision data driven et craft UI.",
-    deliverables: [
-      "Planning trimestriel",
-      "Livraisons hebdomadaires",
-      "Tests utilisateurs réguliers",
-      "Suivi métriques & optimisation",
-    ],
-  },
-];
+const packageIndices = [0, 1, 2];
 
 export default function ServicesPage() {
+  const t = useTranslations("servicesPage");
+
+  const packages = packageIndices.map((index) => ({
+    title: t(`packages.${index}.title`),
+    description: t(`packages.${index}.description`),
+    deliverables: [0, 1, 2, 3].map((deliverableIndex) =>
+      t(`packages.${index}.deliverables.${deliverableIndex}`)
+    ),
+  }));
+
   return (
     <Box component="section" sx={{ backgroundColor: "background.default" }}>
       <Container maxWidth="lg" sx={{ py: { xs: 8, md: 12 } }}>
         <Stack spacing={2} maxWidth={720} mb={6}>
           <Typography variant="overline" color="secondary.main" fontWeight={700} letterSpacing={1.4}>
-            Services
+            {t("sectionLabel")}
           </Typography>
           <Typography variant="h2" fontWeight={700}>
-            Des offres adaptées à chaque maturité produit.
+            {t("title")}
           </Typography>
           <Typography variant="body1" color="text.secondary">
-            Je travaille avec des scale-ups, fintechs et SaaS B2B pour délivrer des expériences cohérentes. Chaque collaboration démarre par un diagnostic pour cadrer les objectifs business et UX.
+            {t("intro")}
           </Typography>
         </Stack>
 
         <Grid container spacing={4}>
-          {servicePackages.map((pack) => (
-            <Grid item xs={12} md={4} key={pack.title}>
+          {packages.map((pack) => (
+            <Grid item size={{ xs: 12, md: 4 }} key={pack.title}>
               <Card sx={{ height: "100%", display: "flex", flexDirection: "column" }}>
                 <CardContent sx={{ flexGrow: 1 }}>
                   <Typography variant="h5" fontWeight={700} gutterBottom>
@@ -81,7 +58,7 @@ export default function ServicesPage() {
                   </Typography>
                   <Divider sx={{ mb: 2 }} />
                   <Typography variant="subtitle2" color="text.secondary" gutterBottom>
-                    Livrables inclus
+                    {t("deliverablesTitle")}
                   </Typography>
                   <List dense sx={{ pt: 0 }}>
                     {pack.deliverables.map((item) => (

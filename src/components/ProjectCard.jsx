@@ -1,11 +1,14 @@
 "use client";
 
-import React from 'react';
-import { Card, CardContent, CardMedia, CardActions, Typography, Chip, Button, Box, Stack } from '@mui/material';
-import GitHubIcon from '@mui/icons-material/GitHub';
-import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import React from "react";
+import {Card, CardContent, CardMedia, CardActions, Typography, Chip, Button, Box, Stack} from "@mui/material";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
+import {useTranslations} from "next-intl";
 
 const ProjectCard = ({ project }) => {
+  const tCommon = useTranslations("common");
+
   return (
     <Card 
       sx={{ 
@@ -53,7 +56,7 @@ const ProjectCard = ({ project }) => {
         
         <Box sx={{ mt: 2 }}>
           <Typography variant="subtitle2" color="text.secondary" gutterBottom>
-            Technologies:
+            {tCommon("projectCard.technologies")}:
           </Typography>
           <Stack direction="row" spacing={1} flexWrap="wrap" useFlexGap>
             {project.technologies.map((tech, index) => (
@@ -78,7 +81,7 @@ const ProjectCard = ({ project }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Code
+            {tCommon("projectCard.code")}
           </Button>
         )}
         {project.liveUrl && (
@@ -90,7 +93,7 @@ const ProjectCard = ({ project }) => {
             rel="noopener noreferrer"
             variant="contained"
           >
-            Demo
+            {tCommon("projectCard.demo")}
           </Button>
         )}
       </CardActions>
