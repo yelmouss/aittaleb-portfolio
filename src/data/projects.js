@@ -33,7 +33,7 @@ export const projects = [
     image: "/projects/market-analysis.jpg",
     githubUrl: "https://github.com/yelmouss/binance-analysis",
     liveUrl: null,
-    category: "Analytics",
+    category: "hamid",
   },
   {
     title: "NFT Marketplace",
@@ -43,8 +43,8 @@ export const projects = [
     image: "/projects/nft-marketplace.jpg",
     githubUrl: "https://github.com/yelmouss/nft-marketplace",
     liveUrl: "https://nft-marketplace-demo.com",
-    category: "Blockchain",
+    category: "hamid",
   },
 ];
 
-export const categories = ["Tous", "Blockchain", "Web App", "Analytics"];
+export const categories = ["Tous", "Blockchain", "Web App", "hamid"];
