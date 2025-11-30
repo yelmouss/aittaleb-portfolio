@@ -52,6 +52,7 @@ const Header = () => {
           px: 1.5,
           py: 1,
           color: isActive ? "primary.main" : "text.primary",
+          whiteSpace: "nowrap",
           "&::after": {
             content: '""',
             position: "absolute",
@@ -165,6 +166,7 @@ const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
               variant="contained"
+              sx={{ whiteSpace: "nowrap" }}
             >
               {tCommon("cta.behance")}
             </Button>
